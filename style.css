@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background: url('https://i.pinimg.com/1200x/34/97/ef/3497ef5c3cdd3fd8dfb6a9cbc4e58295.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    perspective: 300px;
+    box-shadow: 0 0 20px white;
+    animation-name:body-dark ;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: backwards;
+    user-select: none;
+    overflow: hidden;
+}
+
+@keyframes body-dark {
+    0% {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.089); 
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.089);
+    }
+    50% {
+        text-shadow: 0 0 10px white; 
+        box-shadow: 0 0 10px white;
+    }
+    75% {
+        text-shadow: 0 0 10px rgb(240, 40, 40);
+        box-shadow: 0 0 10px rgb(240, 40, 40);
+    }
+    100% {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.041);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.041);
+    }
+}
+
+
+
+.window {
+    display: flex;
+    height: 60%;
+    width: 20%;
+    background-color: rgba(255, 255, 255, 0.39);
+    border-radius: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content:top ;
+    gap: 1em;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    box-shadow: 0 0 20px white;
+    animation-name:window-up ;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: backwards;
+}
+
+.window h1 {
+    font-size: 2.3em;
+    text-shadow: 0 0 5px white;
+}
+
+.window img {
+    height: 20%;
+    border-radius: 30px;
+    margin-top: 23px;
+    box-shadow: 0 0 5px white;
+}
+
+@keyframes window-up {
+    0% {
+        transform: translateY(100vh);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+a {
+    font-weight: 800;
+    font-size: 1.5em;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-right: 0.5em;
+    text-decoration: none;
+    color: black;
+    transition-duration: 0.5s;
+}
+
+a:hover {
+    transition-duration: 0.3s;
+    color: white;
+    text-shadow: 0 0 2px white;
+}
+
+p {
+    font-weight: 800;
+    font-size: 1.3em;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-right: 0.5em;
+    text-decoration: none;
+    color: black;
+    transition-duration: 0.5s;
+}
+
